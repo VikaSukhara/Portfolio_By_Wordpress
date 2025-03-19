@@ -1,7 +1,14 @@
+# Ігнорувати папку wp-content/uploads
 wp-content/uploads/
+
+# Ігнорувати кеш
 wp-content/cache/
+
+# Ігнорувати конфігураційні файли WordPress
 wp-config.php
 .htaccess
+
+# Ігнорувати папки node_modules та vendor
 node_modules/
 vendor/
 
