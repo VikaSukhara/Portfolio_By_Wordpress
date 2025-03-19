@@ -1,0 +1,104 @@
+%common-styles {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #6b7280;
+}
+
+.experience-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #202220;
+  margin-bottom: 20px;
+}
+
+.experience-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 189%;
+  color: #6b7280;
+  margin-bottom: 72px;
+}
+
+.experience-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 170px;
+}
+
+.company {
+  width: 219px;
+  height: 66px;
+}
+
+.company_name {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #202220;
+  width: 192px;
+}
+
+.period {
+  @extend %common-styles;
+  width: 270px;
+}
+
+.job {
+  width: 751px;
+  height: 128px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.job_title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #202220;
+}
+
+.job_description {
+  @extend %common-styles;
+}
+
+//line
+.timeline {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 30px; /* Відступ для лінії */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 39px;
+  top: -20px;
+  width: 2px;
+  height: 100%;
+  background-color: #dcdfe5;
+}
+
+.timeline-item:last-child::before {
+  height: 20%; /* Або інше значення, якщо треба коротше */
+}
+
+.job {
+  display: flex;
+  align-items: start;
+  position: relative;
+  margin-bottom: 40px;
+}

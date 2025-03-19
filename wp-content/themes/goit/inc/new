@@ -1,0 +1,73 @@
+<?php
+
+add_action('acf/init', 'register_blocks');
+function register_blocks()
+{
+    if (function_exists('acf_register_block_type')) {
+        acf_register_block_type(array(
+            'name' => 'hero',
+            'title' => _('Hero'),
+            'description' => _('Hero block'),
+            'render_template' => 'blocks/home-page/hero.php',
+            'category' => 'practise-block',
+            'icon' => 'admin-generic',
+            'enqueue_style' => get_template_directory_uri() . '/assets/scss/app.min.css',
+            'keywords' => array('hero', 'hero block'),
+        ));
+    }
+}
+
+
+
+function register_acf_blocks() {
+    if (function_exists('acf_register_block_type')) {
+        acf_register_block_type(array(
+            'name'            => 'work_experience',
+            'title'           => __('Work Experience'),
+            'description'     => __('Work experience section'),
+            'render_template' => get_template_directory() . '/blocks/experience-section/experience.php',
+            'category'        => 'formatting',
+            'icon'            => 'admin-users',
+            'enqueue_style' => get_template_directory_uri() . '/assets/scss/app.min.css',
+            'keywords'        => array('work', 'experience', 'career'),
+            // 'enqueue_script'  => get_template_directory_uri() . '/blocks/work-experience.js',
+        ));
+
+    }
+}
+add_action('acf/init', 'register_acf_blocks');
+
+
+
+// add_action('acf/init', 'register_blocks');
+// function register_blocks()
+// {
+//     if (function_exists('acf_register_block_type')) {
+//         $blocks = [
+//             [
+//                 'name'            => 'hero',
+//                 'title'           => __('Hero'),
+//                 'description'     => __('Hero block'),
+//                 'render_template' => 'blocks/home-page/hero.php',
+//                 'category'        => 'practise-block',
+//                 'icon'            => 'admin-generic',
+//                 'keywords'        => ['hero', 'hero block'],
+//             ],
+//             [
+//                 'name'            => 'work_experience',
+//                 'title'           => __('Work Experience'),
+//                 'description'     => __('A custom block for work experience.'),
+//                 'render_template' => get_template_directory() . '/blocks/experience-section/experience.php',
+//                 'category'        => 'formatting',
+//                 'icon'            => 'admin-users',
+//                 'keywords'        => ['work', 'experience', 'career'],
+//                 'mode'            => 'preview',
+//                 'supports'        => ['align' => true],
+//             ]
+//         ];
+
+//         foreach ($blocks as $block) {
+//             acf_register_block_type($block);
+//         }
+//     }
+// }

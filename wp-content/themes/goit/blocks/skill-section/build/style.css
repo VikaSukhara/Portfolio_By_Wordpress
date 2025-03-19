@@ -1,0 +1,93 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
+  \*********************************************************************************************************/
+.skill-section_title {
+  margin-bottom: 20px;
+  color: #202220;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-top: unset;
+}
+.skill-section_description {
+  color: #6b7280;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+.skill-section_block {
+  padding: 96px 0;
+}
+.skill-section_block .skill-section_skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.skill-section_block .skill-section_skills > div {
+  width: calc(50% - 10px);
+  margin: unset;
+  border-radius: 15px;
+  border: 1px solid #dcdfe5;
+  background: #fff;
+  padding: 25px;
+}
+.skill-section_block .skill-section_skills .wp-block-heading {
+  margin: unset;
+  color: #111827;
+}
+.skill-section_block .skill-section_skills p {
+  margin: unset;
+  padding-left: 56px;
+  color: #6b7280;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.wp-admin .skill-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: left;
+}
+.skill-section .block-editor-inner-blocks {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.skill-section .block-editor-inner-blocks > .block-editor-block-list_layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skill-section .block-editor-inner-blocks > .block-editor-block-list_layout > .wp-block-group {
+  width: calc(50% - 10px);
+  margin: unset;
+  border-radius: 15px;
+  border: 3px solid #0759ff;
+  background: #fff;
+  padding: 25px;
+}
+.skill-section .block-editor-inner-blocks > .block-editor-block-list_layout > .wp-block-group .wp-block {
+  margin: unset;
+}
+.skill-section .block-editor-inner-blocks > .block-editor-block-list_layout .wp-block-heading {
+  margin: unset;
+  color: #111827;
+}
+.skill-section .block-editor-inner-blocks > .block-editor-block-list_layout .wp-block-headingh5, .skill-section .block-editor-inner-blocks > .block-editor-block-list_layout .wp-block-headingh6 {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+.skill-section .block-editor-inner-blocks > .block-editor-block-list_layout p {
+  margin: unset;
+  padding-left: 55px;
+}
+.skill-section .block-editor-inner-blocks > .block-editor-block-list_layout .block-list-appender {
+  bottom: -60px;
+}
